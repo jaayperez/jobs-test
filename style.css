@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  color: #fff;
+  overflow: hidden;
+}
+
+section {
+  align-items: center;
+  background-color: #1c1c25;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+section::before,
+.card::before {
+  background: linear-gradient(#f00, #f0f);
+  border-radius: 50%;
+  content: '';
+  height: 170px;
+  position: absolute;
+  width: 170px;
+}
+
+section::before {
+  left: 55%;
+  top: 3%;
+}
+
+.card::before {
+  background: linear-gradient(rgb(0, 152, 240), rgb(4, 87, 211));
+  bottom: 5%;
+  left: 33%;
+}
+
+.face {
+  height: 480px;
+  width: 250px;
+  filter: blur(0.2px);
+
+  background: rgba( 255, 255, 255, 0.20 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 0.5px );
+  -webkit-backdrop-filter: blur( 0.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.slide-content {
+  width: 120px;
+  height: 19px;
+  padding: 12px 20px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 30px auto;
+  cursor: pointer;
+}
+
+.face h3 {
+  font-weight: 300;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+
+.face h6 {
+  font-weight: 300;
+  font-size: 12px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.icon-content {
+  margin-top: 180px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-content i {
+  font-size: 20px;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.fa, .fas {
+  font-size: 10px;
+}
